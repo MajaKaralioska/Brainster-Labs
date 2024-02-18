@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project-01-BrainsterLabs</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Latest compiled and minified Bootstrap 4.6 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- CSS script -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Latest Font-Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/b16aa13ed7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar-section -->
+    <nav
+      class="navbar py-1 navbar-expand-lg navbar-light bg-warning position-relative shadow"
+    >
+      <a class="navbar-brand text-center ml-5" href="index.html"
+        ><img src="./img/Logo.png" alt="logo" class="img-fluid logo" /><span
+          class="d-block font-weight-bold"
+          >BRAINSTER</span
+        ></a
+      >
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto mr-auto font-weight-bold">
+          <a
+            class="nav-link"
+            href="https://marketpreneurs.brainster.co/"
+            target="_blank"
+            >Академија за маркетинг <span class="sr-only">(current)</span></a
+          >
+          <a
+            class="nav-link"
+            href="https://codepreneurs.brainster.co/"
+            target="_blank"
+            >Академија за програмирање</a
+          >
+          <a
+            class="nav-link"
+            href="https://brainster.co/data-science/"
+            target="_blank"
+            >Академија за data science</a
+          >
+          <a
+            class="nav-link"
+            href="https://design.brainster.co/"
+            target="_blank"
+            >Академија за дизајн</a
+          >
+        </div>
+        <div>
+          <a
+            class="nav-link btn btn-link bg-red text-white ml-auto"
+            href="form.html"
+            >Вработи наш студент</a
+          >
+        </div>
+      </div>
+      <!-- mobile responsive menu -->
+      <div>
+        <img src="./img/open.png" alt="" id="menuIcon" class="d-lg-none" />
+      </div>
+      <div class="menu-box" id="menuBox">
+        <ul>
+          <li>
+            <a
+              href="https://marketpreneurs.brainster.co/"
+              target="_blank"
+              class="nav-link"
+              >Академија за маркетинг</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://codepreneurs.brainster.co/"
+              target="_blank"
+              class="nav-link"
+              >Академија за програмирање</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://brainster.co/data-science/"
+              target="_blank"
+              class="nav-link"
+              >Академија за data-science</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://design.brainster.co/"
+              target="_blank"
+              class="nav-link"
+              >Академија за дизајн</a
+            >
+          </li>
+          <div class="ml-3">
+            <li>
+              <a href="form.html" class="btn btn-sm bg-red nav-link"
+                >Вработи наш студент</a
+              >
+            </li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <!-- section-tw0-form -->
+    <div class="container-fluid">
+      <div class="row bg-warning">
+        <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 mt-5">
+          <div class="heading text-center my-5">
+            <h1 class="text-dark display-5 font-weight-bold">
+              Вработи студенти
+            </h1>
+          </div>
+          <form class="needs-validation my-5 py-5" novalidate="" id="form2">
+            <div class="form-row text-left">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom01" class="font-weight-bold"
+                  >Име и презиме
+                </label>
+                <!-- you can write only valid name includin letters from the keyboard, numbers won't work -->
+                <input
+                  type="text"
+                  class="form-control font-italic"
+                  id="alpha-only-input"
+                  name="alphaOnly"
+                  placeholder="Вашето име и презиме"
+                  required=""
+                />
+                <div class="invalid-feedback">
+                  Пополнете ги вашето име и презиме
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom02" class="font-weight-bold"
+                  >Име на компанија</label
+                >
+                <!-- you can write letters and numbers from keyboard -->
+                <input
+                  type="text"
+                  class="form-control font-italic"
+                  id="validationCustom02"
+                  name="companyname"
+                  placeholder="Име на вашата компанија"
+                  required=""
+                />
+                <div class="invalid-feedback">
+                  Пополнете гo името на вашата компанија
+                </div>
+              </div>
+            </div>
+            <div class="form-row text-left">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03" class="font-weight-bold"
+                  >Контакт имејл</label
+                >
+                <!--you can enter only valid e-mail format ex. xxxx@.gmail.com -->
+                <input
+                  type="email"
+                  class="form-control font-italic"
+                  id="validationCustom03"
+                  placeholder="Контакт имејл на вашата компанија"
+                  required=""
+                />
+                <div class="invalid-feedback">
+                  Пополнете го меилот на вашата компанија
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03" class="font-weight-bold"
+                  >Контакт телефон</label
+                >
+                <!-- you can write only numbers from keyboard letters won't work -->
+                <input
+                  type="text"
+                  class="form-control font-italic"
+                  placeholder="Контакт телефон на вашата компанија"
+                  name="passkey"
+                  id="num"
+                  oninput="return onlynum()"
+                  minlength="2"
+                  required=""
+                />
+                <div class="invalid-feedback">
+                  Пополнете го телефонскиот број на вашата компанија
+                </div>
+              </div>
+
+              <div id="select-menu" class="col-md-6 mb-3">
+                <label for="validationCustom04" class="font-weight-bold"
+                  >Тип на студент</label
+                >
+                <div
+                  class="custom-select form-control"
+                  id="select-btn"
+                  style="width: 100%"
+                >
+                  <select
+                    class="form-control font-weight-bold"
+                    id="validationCustom04"
+                    required=""
+                  >
+                    <option value="" hidden="">Изберете тип на студент:</option>
+                    <option>Студенти од маркетинг</option>
+                    <option>Студенти од програмирање</option>
+                    <option>Студенти од data-science</option>
+                    <option>Студенти од дизајн</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 my-4">
+                <button
+                  class="btn btn-danger btn-block text-uppercase mt-2"
+                  type="submit"
+                  id="btnSubmit"
+                >
+                  испрати
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-dark py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-center text-white font-weight-bold small mb-0">
+              Изработено со
+              <i class="fa-solid fa-heart" style="color: #da0b0b"></i> од
+              студентите на Brainster
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/src/form.js"></script>
+    <!-- jQuery library -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="ha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest Compiled Bootstrap 4.6 JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
